@@ -1,0 +1,70 @@
+جلسه 77
+
+// array method
+// string method
+
+var scores=[
+    10,14,1,4,6,16132,515,5,12,1,2,1,2,1,12
+]
+var num=10;
+
+// console.log(Array.isArray(scores)); // is array
+
+// console.log(scores.indexOf(12,9)); // after index 9
+
+// console.log(scores.lastIndexOf(14));
+
+// console.log(scores.splice(start,deletecount,add));
+
+// console.log(scores.slice(start,end));
+
+// console.log(scores.join("/")); // to string
+
+// console.log(num.split());  ?
+
+// console.log(scores.reverse());
+
+جلسه 79
+best practice
+
+بهینه کردن کد 
+
+جلسه 82
+
+data type reference  primitive
+
+جلسه 86 
+
+// var users = [
+//   { name: "pooya", family: "ne" },
+//   { name: "ali ", family: "as" },
+//   { name: "mehran", family: "bmn" },
+//   { name: "arash", family: "na" },
+//   { name: "surena", family: "ta" },
+//   { name: "akbar", family: "kh" }
+// ];
+
+// var v = prompt("enter user name");
+// // some
+
+// users.some(function(some) {
+//   console.log(true);
+//   return true;
+// });
+
+// // find index
+// var userIndex = users.findIndex(function(user) {
+//   return user.name === v;
+// });
+// console.log(userIndex);
+
+// // find
+
+// var userData = users.find(function(user) {
+//   return user.name === v;
+// });
+
+// console.log(userData);
+
+
+جلسه88

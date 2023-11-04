@@ -1,0 +1,1194 @@
+سایت
+javascript.info
+mdn
+-----------------------------------
+
+جلسه 4
+
+https://javascript.info/variables
+
+
+let message;
+message = 'Hello'; 
+
+let message = 'Hello!'; 
+
+let user = 'John', age = 25, message = 'Hello';
+
+var instead let
+
+var message = 'Hello';
+
+let message;
+
+message = 'Hello!';
+
+message = 'World!'; // value changed
+اینو قبول داره
+
+alert(message);
+
+جلسه 5
+
+data type
+number
+string
+boolean
+....
+
+
+جلسه 6
+alert ()
+prompt(عین alertو default)
+
+var variable=prompt(عین alertو default);
+
+
+confirm??????
+
+
+جلسه 7
+جلسه 8
+ 
+ https://javascript.info /type-conversions
+
+
+type-conversions
+
+var num =21; //number
+var strNum = String(num); //string
+var boolNum= Boolean(num); //boolean true
+
+var numb= +strNum; //number  Number/+
+
+alert (typeof numb);
+
+جلسه 9
+--------------------------------------------------
+تمرین جلسه 9
+
+var x1 = +prompt("first number");
+
+var x2 = +prompt("second number");
+
+var y1 = x1 + x2;
+var y2 = x1 - x2;
+var y3 = x1 * x2;
+var y4 = x1 / x2;
+var y5 = x1 ** x2;
+var y6 = x1 % x2;
+
+alert(y1);
+alert(y2);
+alert(y3);
+alert(y4);
+alert(y5);
+alert(y6);
+
+
+------------------------------------------------------
+
+جلسه 10
+ حل تمرین 
+
+ ---------------------------------------------
+
+ جلسه 11
+
+ concat 
+
+ alert("sppr   \"llfllflfjwo\"    owtlllg" + "ohepohkpyetokp")
+
+
+جلسه 12
+13 
+
+nan :not a number
+
+alert(isNaN(num1+num2)) //true
+ 
+alert(isNaN(st1+num2)) /false
+
+جلسه 14
+
+
+n1=21; // مقدارشو نسبت دادیم به متغیر
+
+n1==n2  // مقایسه مقدار
+
+s1===n1 // مقایسه مقدار و تایپ
+
+<
+>
+<=
+>=
+
+جلسه 15
+
+ 
+var n1=2;
+var n2=5;
+var n3=7;
+
+if(n1+n2 ==n3){
+    alert("مساوی است")
+}else{
+    alert("مساوی نیست");
+}
+
+
+جلسه 16
+
+var x = +prompt("عدد خود را وارد کنید",0);
+
+alert(typeof x);
+
+if (x % 2 == 0) {
+  alert("زوج است");
+} else {
+  alert("فرد است");
+}
+
+جلسه17
+
+var x1= +prompt("عدد اول وارد کن",0);
+
+var x2= +prompt("عدد دوم وارد کن", 0);
+
+var x3= +prompt("عدد سوم وارد کن", 0);
+
+
+var y1= (x1+x2+x3)/3;
+
+alert("میانگین 3 عدد وارده شده برابر است با:" + " "+ y1);
+
+
+جلسه18
+
+var age = +prompt("سن خود را وارد کنید" ,0);
+
+if(age>=18){
+    alert("ورود به پنل کاربری");
+}else{
+    alert(" مجاز  به ورود نیستید")
+}
+
+
+جلسه 19
+
+var num1=+prompt("first number:",0);
+var num2=+prompt("second number",0);
+
+alert(num1**num2);
+
+جلسه 20
+
+var year = +prompt("سال تولد وارد کن", 1402);
+
+if (isNaN(year)) {
+  alert("معتبر نیست");
+} else {
+  if (year > 1402) {
+    alert("معتبر نیست");
+  } else {
+    var age = 1402 - year;
+
+    alert("سن شما:" + " " + age);
+  }
+}
+
+جلسه 21
+
+var min= +prompt("بر حسب دقیقه:",0);
+
+var hour= min/60;
+
+if(isNaN(hour)){
+    alert("معتبر نمیباشد");
+}
+else{
+    alert(hour);
+}
+
+جلسه22
+23
+24
+
+var age=+prompt("age?" , 18);
+var mf=prompt("male or female" , '');
+
+if(mf== "female" || age<18){
+    alert(false);
+}
+else{
+    alert(true);
+}
+
+جلسه 25
+26
+
+// شرط تک خطی
+
+var num1=11;
+var num2=55;
+
+num1+num2===66? alert(true) :alert(false);
+
+
+جلسه 27
+
+var num=+prompt("number",0);
+
+switch(num){
+    case 11:
+    alert(false);
+    break;
+    case 12:
+    case 13:
+        alert(false);
+        break;
+    
+    case 1 :
+        alert(true);
+        break
+    default:
+    alert("number");
+}
+
+جلسه 28
+var num = +prompt("معدل کارنامتو بده", 0);
+
+switch (num) {
+  case 20:
+  case 19:
+  case 18:
+    alert("A");
+    break;
+
+  case 17:
+  case 16:
+  case 15:
+    alert("B");
+    break;
+
+  case 14:
+  case 13:
+  case 12:
+    alert("C");
+    break;
+
+  default:
+    alert("field");
+}
+
+جلسه 29
+
+function
+
+
+var n1=12;
+var n2=22;
+
+
+function name(){
+    alert(n1 +" "+n2+" " + (n1+n2) );
+}
+
+name();
+
+
+جلسه 30
+
+var name= function(){
+  alert(true);
+};
+
+جلسه 31 
+32
+
+// var x=+prompt("number:",0);
+
+function number(x){
+    if(x%2 ==0){
+        alert("زوج است");  //even
+    }else{
+        alert("فرد است");  //odd
+    }
+}
+
+number(21);
+
+جلسه 33
+
+function average(n1,n2,n3){
+    var sum=n1+n2+n3;
+    var av=sum/3;
+
+    alert("average: "+ av );
+
+}
+
+
+average(20,15,20);
+
+جلسه 34
+
+function sum(n1=2,n2=4){
+    var sum=n1+n2;
+    alert(sum);
+}
+
+//sum();  //مقدار پیش فرض رو در نظر میگیره
+
+sum(10,9);
+
+جلسه 35
+
+var num1 = +prompt("num1:");
+var num2 = +prompt("num2:");
+
+function show(n1, n2) {
+  return n1 + n2;  // مقدار پیش فرض undefinds
+
+  // alert()  // اجرا نمیشه
+}
+
+
+var sum= show(num1,num2);
+
+alert(sum);
+
+جلسه 36
+
+var s1= "pooya";
+
+var s2="mehran";
+
+function str(){
+    var st= s1[3]+s2[2];
+    alert(st);
+}
+
+str();
+
+alert(s1.length);
+
+جلسه37
+
+var userName = prompt("username:");
+
+var passWord = prompt("password:");
+
+// function user(){
+
+//     if(userName.length >= 3 &&  passWord.length >= 8){
+//         alert("ok");
+//     }
+//     else{
+//         alert("err")
+//     }
+// }
+
+// user();
+
+function user() {
+  if (userName.length < 3 || passWord.length < 8) {
+    alert("err");
+  } else {
+    alert("ok");
+  }
+}
+
+user();
+
+
+جلسه38
+
+var str= "this is first string";
+
+var str2="this is second string";
+
+// string methods
+
+console.log(str[1]); //index 1
+
+console.log(str.charAt(2)); //index 2
+
+console.log(str.charCodeAt(3)); //index3 char-code
+
+console.log(str.concat(str2)); //str+str2
+
+console.log(str.trim()); //delete space start end
+
+console.log(str.toUpperCase()); //uppercase
+
+console.log(str.toLowerCase()); //lowercase
+
+console.log(str.search("first")); //index 8
+
+console.log(str.indexOf("is"));  //search index
+
+console.log(str.lastIndexOf("is")); //search last  index
+
+console.log(str.includes("string")); //true or false
+
+
+
+جلسه39
+
+var userName = prompt("username:", "");
+
+if (userName.toLowerCase() == "pooya") {
+  alert("login");
+} else {
+    alert("err");
+}
+
+
+// نمرین حساس به حروف کوچک و بزرگ
+
+جلسه40
+
+var text = "this is first string";
+
+console.log(text.slice(4, 8)); //cut string index4  to index8
+
+console.log(text.substr(4,5)); //index4 to length5
+
+console.log(text.substring(4,8)); //slice
+
+جلسه41
+
+// math methods
+
+// سرچ کن بقیشو 
+
+console.log(Math.PI);
+
+console.log(2**3); // 2**3=8
+
+console.log(Math.pow(2,3)); //2**3=8 توان 
+
+console.log(Math.sqrt(16));  // 4*4=16 //4  جذر
+
+console.log(Math.abs(-14));  // |-14|=14  قدر مطلق 
+
+console.log(Math.min(12,14,20,15,10,44));  //minimum
+
+console.log(Math.max(14,22,55,88,99,11,100)); //maximum
+
+console.log(Math.floor(20.2648565)); //قسمت صحیح
+
+console.log(Math.trunc(12.884654)); //floor
+
+console.log(Math.round(24.88)); // گرد میکنه رو به اونی ک نزدیکه 
+
+console.log(Math.ceil(12.4)); //بالاترین عدد  صحیح
+
+console.log(Math.random() *10); //random  بین 0 تا 10 میتونی تغییرش بدی
+
+جلسه42
+
+// random number
+
+var num=Math.random()*100000;
+
+var finalNum=Math.floor(num);
+
+console.log(finalNum);
+
+جلسه43
+
+var num = 10;
+console.log(num);
+
+num += 5; //num=num+5;
+console.log(num);
+
+num -= 4; //num = num - 4;
+console.log(num);
+
+num *= 2; //num=num*2;
+console.log(num);
+
+num /= 1; //num=num/1
+console.log(num);
+
+num %= 7; //num=num%7
+console.log(num);
+
+
+-------------------------------------
+
+var n = 10;
+
+n++; // +1
+++n;
+
+n--; //-1
+--n;
+
+for (var n = 0; n < 100; n++) {
+  console.log(n);
+}
+
+
+جلسه44
+
+تفاوت قبل یا بعد 
+n++
+++n
+
+
+n1=n2 بعدش n2++
+
+تو این حالت اشتباه میشه
+
+بستگی داره میخای چیکار کنی
+
+
+جلسه45
+46
+
+//loop 
+//حلقه ها
+
+// for(var i=0;i<5;i++){
+//     console.log(i);
+// }
+
+// ---------------------------------
+
+var str= "this is first string";
+
+for(var i=0; i<str.length;i++){
+    console.log(i,str[i]);
+}
+
+
+
+
+جلسه47
+
+
+// اعدادزوج 
+// for(var i=0;i<=100;i++){
+//     if(i%2 ==0){
+//         console.log(i);
+//     }
+// }
+
+// for(var i=0;i<100;i+=2){
+//     console.log(i);
+// }
+
+// اعداد فرد
+for(var i=1;i<100;i+=2){
+    console.log(i);
+}
+
+جلسه 48
+49
+
+var total = 0;
+for (var i = 0; i < 5; i++) {
+  //   var price = +prompt("قیمت محصول را وارد کنید", 0);
+  //   total += price;
+  total += Number(prompt("قیمت محصول را وارد کنید:", 0));
+//   console.log(i, price);
+  console.log(total);
+}
+
+جلسه50
+
+var sum = 0;
+
+for (var i = 0; i < 5; i++) {
+  console.log(i);
+
+  var num = +prompt("number: ", 0);
+
+  console.log("num", num);
+
+  sum += num;
+
+  console.log("sum", sum);
+}
+
+alert("sum:  "+ sum);
+
+alert("min "+ sum/5);
+
+---------------------------------------------------
+
+var userNumber = null;
+var sum = 0;
+
+for (var i = 0; i < 5; i++) {
+  userNumber = +prompt("enter the" + (i + 1) + "number", 0);
+
+  sum += userNumber;
+}
+
+alert("average " + sum / 5);
+
+
+جلسه51
+
+var userNumber = +prompt("enter number ", 0);
+
+var sum = 0;
+
+for (var i = 0; userNumber / 10 != 0; i++) {
+  sum += userNumber % 10;
+  userNumber = Math.floor(userNumber / 10);
+}
+
+console.log("sum of digits :", sum);
+
+
+جلسه 52
+
+var userNumber = +prompt("enter number : ", 0);
+
+var digitNum = 0;
+
+for (var i = 0; userNumber / 10 != 0; i++) {
+  userNumber = Math.floor(userNumber / 10);
+  digitNum++;
+}
+
+console.log("number of digits : ", digitNum);
+
+جلسه 53 
+
+//loop
+//حلقه ها
+
+// var i = 0;
+
+// while (i < 5) {
+//   console.log(i);
+//   i++;
+// }
+
+// ------------------------------------------------------
+//  اعداد زوج
+
+
+// var i = 0;
+// while (i < 100) {
+//   console.log(i);
+//   i += 2;
+// }
+
+// -------------------------------------------
+
+جلسه 54
+
+// var userNumber = +prompt("enter number :", 0);
+
+// var sum = 0;
+
+// while (userNumber / 10 != 0) {
+//   sum += userNumber % 10;
+//   userNumber = Math.floor(userNumber / 10);
+// }
+
+// console.log("sum of digits:", sum);
+
+// ---------------------------------------------------
+
+// var userNumber = +prompt("enter number : ", 0);
+
+// var digitNum = 0;
+
+// while (userNumber / 10 != 0) {
+//   userNumber = Math.floor(userNumber / 10);
+//   digitNum++;
+// }
+
+// console.log("number of digits: ", digitNum);
+
+
+// -------------------------------------------------
+
+جلسه55
+
+var i = +prompt("enter first number : ", 0);
+
+var j = +prompt("enter second number : ", 0);
+
+if (j < i) {
+  alert("err");
+}
+
+while (i < j + 1) {
+  if (i % 2 == 0) {
+    console.log(i);
+  }
+  i++;
+}
+
+console.log("end");
+
+
+جلسه56
+
+var j = +prompt("تعداد نمرات خود را وارد کنید :", 0);
+
+var i = 0;
+
+var sum = 0;
+
+while (i < j) {
+  var num = +prompt("نمره " + i + "وارد کنید");
+
+  sum += num;
+
+  i++;
+}
+
+alert("مجموع نمرات شما :" + sum);
+
+alert("میانگین نمرات شما: " + sum / j);
+
+اینو خودش ی طور دیگه ای نوشت 
+ولی اینی ک نوشتم هم کار میکنه 
+
+
+
+جلسه57
+
+//loop
+//حلقه ها
+
+var i = 0;
+
+do {
+  alert("salam");
+  i++;
+} while (i < 3);
+
+جلسه 58
+
+var num1 = +prompt("enter num1 :", 0);
+
+var num2 = +prompt("enter num2 :", 0);
+
+var n1 = num1;
+
+for (var i = 1; i < num2; i++) {
+  num1 = num1 * n1;
+  console.log(num1);
+}
+alert(num1);
+
+
+جلسه 59
+60
+//arrray methods
+
+var students = ["pooya", "mehran", "ali"];
+
+console.log(students);
+
+console.log(students.length);
+
+console.log(students[2]);
+
+students[1] = "hello";
+
+console.log(students);
+
+students.push("end", "2");
+
+console.log(students);
+
+students.pop();
+
+console.log(students);
+
+students.unshift("start", "1");
+
+console.log(students);
+
+students.shift();
+
+console.log(students);
+
+جلسه61
+
+var userNumbers = [];
+
+var userNumber = 0;
+
+while (userNumber != -1) {
+  userNumber = +prompt("enter number / enter -1 :", 0);
+  if (userNumber != -1) {
+    userNumbers.push(userNumber);
+  }
+}
+
+console.log(userNumbers);
+
+var sum = 0;
+
+for (var i = 0; i < userNumbers.length; i++) {
+  sum += userNumbers[i];
+}
+
+console.log("sum", sum);
+
+var min = sum / userNumbers.length;
+
+console.log("min", min);
+
+
+جلسه62
+
+// object
+
+var user1 = {
+  name: "pooya",
+  family: "nk",
+  age: 21
+};
+
+// console.log(user1);
+// console.log(user1["age"]);
+// console.log(user1.family);
+
+var users = [
+  { id: 1, name: "pooya", age: 21 },
+  { id: 2, name: "mehran", age: 21 }
+];
+
+// console.log(users[0]);
+console.log(users[0].age);
+
+جلسه63
+
+
+var users = [
+  { name: "pooya", family: "nk", age: 21 },
+  { name: "ali", family: "as", age: 11 },
+  { name: "mehran", family: "bmn", age: 12 }
+];
+
+var userName = prompt("username 3/10 :");
+
+var userFamily = prompt("userFamily 3/15 :");
+
+var userAge = prompt("userAge :");
+
+if (userName.length < 3 || userName.length > 10) {
+  alert("err name");
+} else if (userFamily.length < 3 || userFamily.length > 15) {
+  alert("err family");
+} else if (isNaN(userAge) || userAge.length>4) {
+  alert("err age");
+} else {
+  var newUser = {
+    id: 4,
+    name: userName,
+    family: userFamily,
+    age: userAge
+  };
+}
+
+users.push(newUser);
+
+console.log(users);
+
+
+
+جلسه64
+
+// array methods
+// foreach
+
+var users = ["pooya", "ali", "mehran", "arash", 21];
+
+users.forEach(function(user) {
+  console.log(user);
+  //به تعداد تعداد یوسر لاگ گرفت
+});
+
+جلسه65
+
+var users = [
+  { name: "pooya", family: "ne" },
+  { name: "ali ", family: "as" },
+  { name: "mehran", family: "bmn" },
+  { name: "arash", family: "na" },
+  { name: "surena", family: "ta" },
+  { name: "akbar", family: "kh" }
+];
+
+users.forEach(function(user) {
+  console.log("name :", user.name, "family :", user.family);
+});
+
+جلسه66
+
+// array methods
+
+// var users = ["pooya", "ali ", "mehran", "arash", "surena", "akbar"];
+
+// console.log(users.includes("hasan")); //false
+
+// console.log(users.includes("akbar")); //true
+
+جلسه67
+
+// array methods
+
+var users = [
+  { name: "pooya", family: "ne" },
+  { name: "ali ", family: "as" },
+  { name: "mehran", family: "bmn" },
+  { name: "arash", family: "na" },
+  { name: "surena", family: "ta" },
+  { name: "akbar", family: "kh" }
+];
+
+var isuser = users.some(function(user) {
+  return (user.name = "ali");
+});
+console.log(isuser);
+
+جلسه68
+// چالش
+
+ی  حلقه اضافه کردیم هرچی محصول میهاد رو سفارش بده
+
+var allProduct = [
+  { id: 1, name: "laptop", price: 170 },
+  { id: 2, name: "phone", price: 180 },
+  { id: 3, name: "pen", price: 1070 },
+  { id: 4, name: "mobile", price: 1741 },
+  { id: 5, name: "headphone", price: 14870 }
+];
+
+var userBasket = [];
+// ---------------------------------------------
+while (userProduct != "") {
+  var userProduct = prompt("enter product name:");
+
+  if (userProduct != "") {
+    var reqProduct;
+
+    var shop = allProduct.some(function(product) {
+      if (product.name === userProduct) {
+        reqProduct = product;
+        return true;
+      }
+    });
+
+    if (shop === true) {
+      var newProduct = {
+        id: reqProduct.id,
+        name: reqProduct.name,
+        price: reqProduct.price
+      };
+
+      userBasket.push(newProduct);
+    } else {
+      alert("product not found");
+    }
+  }
+}
+// --------------------------------------
+
+if (userBasket.length != 0) {
+  var sum = 0;
+
+  userBasket.forEach(function(product) {
+    sum += product.price;
+  });
+
+  console.log(userBasket);
+  console.log("total:", sum);
+} else {
+  console.log("basket is empty");
+}
+
+
+جلسه 69
+// array methods
+
+
+var ages=[19,12,32,14,18,20];
+
+ages.every(function(age){
+    console.log(age);
+    return age>18;
+})
+console.log(isAll);
+
+// بعد از false  اجرا نمیشه 
+
+جلسه70
+
+var users = [
+  { name: "pooya", family: "ne", age: 21 },
+  { name: "ali ", family: "as", age: 21 },
+  { name: "mehran", family: "bmn", age: 19 },
+  { name: "arash", family: "na", age: 22 },
+  { name: "surena", family: "ta", age: 16 },
+  { name: "akbar", family: "kh", age: 23 }
+];
+
+var isAll = users.every(function(user) {
+//   console.log(user);
+  return user.age > 18;
+});
+
+
+if(isAll===true){
+    console.log("گروه تشکیل شد");
+}
+else{
+    console.log("سن شما مجاز نیست");
+}
+
+
+
+جلسه71
+
+// array methods
+//splice
+var num=[
+    1,515,132,84,8744,74,984,64,68,65,65
+]
+
+num.splice(3,2)
+// دو تا بعد index 3 رو پاک میکنه
+console.log(num);
+
+num.splice(1,2,"add")
+console.log(num);
+
+جلسه72
+
+// array methods
+
+// findIndex
+
+
+var users = [
+  { name: "pooya", family: "ne", age: 21 },
+  { name: "ali ", family: "as", age: 21 },
+  { name: "mehran", family: "bmn", age: 19 },
+  { name: "arash", family: "na", age: 22 },
+  { name: "surena", family: "ta", age: 16 },
+  { name: "akbar", family: "kh", age: 23 }
+];
+
+var userrr = users.findIndex(function(user) {
+  return user.name == "arash";
+});
+
+console.log(userrr);
+
+
+جلسه73
+
+var allProduct = [
+  { id: 1, name: "laptop", price: 170 },
+  { id: 2, name: "phone", price: 180 },
+  { id: 3, name: "pen", price: 1070 },
+  { id: 4, name: "mobile", price: 1741 },
+  { id: 5, name: "headphone", price: 14870 }
+];
+
+var userBasket = [
+  { id: 1, name: "laptop", price: 170 },
+  { id: 2, name: "phone", price: 180 },
+  { id: 3, name: "pen", price: 1070 }
+];
+
+var productStatus = prompt("add or delete");
+
+if (productStatus === "add") {
+  var userProduct = prompt("enter product name:");
+  var productData;
+  var isInShop = allProduct.some(function(product) {
+    if (product.name === userProduct) {
+      productData = product;
+      return true;
+    }
+  });
+
+  if (isInShop === true) {
+    var newProduct = {
+      id: productData.id,
+      name: productData.name,
+      price: productData.price
+    };
+    userBasket.push(newProduct);
+    //
+  } else {
+    alert("موجود نیست");
+  }
+} else if (productStatus === "delete") {
+  var userProduct_d = prompt("enter product name to delete:");
+
+  var productIndex = userBasket.findIndex(function(product) {
+    return product.name === userProduct;
+  });
+
+  userBasket.splice(productIndex, 1);
+} else {
+  alert("err");
+}
+
+if (userBasket.length != 0) {
+  var sum = 0;
+
+  userBasket.forEach(function(product) {
+    sum += product.price;
+  });
+
+  console.log(userBasket);
+  console.log("total:", sum);
+} else {
+  console.log("basket is empty");
+}
+
+جلسه74
+
+// array methods
+//  map
+//   روی تک تک  انجام میشه تا اخر ارایه
+
+var num = [2, 4, 6, 8, 10];
+
+var numb = num.map(function(number) {
+  // console.log(number);
+  return number ** 2;
+});
+
+console.log(numb);
+//   فرقش با فورایچ 
+//  مپ ی ارایه نو میسازه یجورایی
+
+جلسه75
+
+// array methods
+//  فیلتر کردن ایتم ها
+// filter
+
+var ages = [15, 32, 14, 12, 18, 19, 20, 22, 21];
+
+var Age = ages.filter(function(age) {
+  return age > 18;
+});
+
+console.log(Age);
+
+جلسه76
+------------------------
+جلسه77
+
