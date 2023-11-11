@@ -1192,3 +1192,244 @@ console.log(Age);
 ------------------------
 جلسه77
 
+
+//////////////////////////////////////////////////////////////////////
+از اینجا به بعد مرتب کن
+
+//////////////////////////////////////////////////
+
+جلسه 77
+
+// array method
+// string method
+
+var scores=[
+    10,14,1,4,6,16132,515,5,12,1,2,1,2,1,12
+]
+var num=10;
+
+// console.log(Array.isArray(scores)); // is array
+
+// console.log(scores.indexOf(12,9)); // after index 9
+
+// console.log(scores.lastIndexOf(14));
+
+// console.log(scores.splice(start,deletecount,add));
+
+// console.log(scores.slice(start,end));
+
+// console.log(scores.join("/")); // to string
+
+// console.log(num.split());  ?
+
+// console.log(scores.reverse());
+
+جلسه 79
+best practice
+
+بهینه کردن کد 
+
+جلسه 82
+
+data type reference  primitive
+
+جلسه 86 
+
+// var users = [
+//   { name: "pooya", family: "ne" },
+//   { name: "ali ", family: "as" },
+//   { name: "mehran", family: "bmn" },
+//   { name: "arash", family: "na" },
+//   { name: "surena", family: "ta" },
+//   { name: "akbar", family: "kh" }
+// ];
+
+// var v = prompt("enter user name");
+// // some
+
+// users.some(function(some) {
+//   console.log(true);
+//   return true;
+// });
+
+// // find index
+// var userIndex = users.findIndex(function(user) {
+//   return user.name === v;
+// });
+// console.log(userIndex);
+
+// // find
+
+// var userData = users.find(function(user) {
+//   return user.name === v;
+// });
+
+// console.log(userData);
+
+
+جلسه 88
+جلسه 89
+//eval 88
+
+
+جلسه 90
+
+// best practice
+// type of function
+
+function name(){
+    alert();
+}
+
+name();
+
+// ------------------------------
+
+var name=function(var){
+    console.log();
+}
+
+// -------------------------------
+// IIFE FUNCTION
+(function(){ 
+    alert();
+}());
+// -----------------------------------
+
+// دو مدل دیگه هست
+
+جلسه 91
+
+best practice
+
+foreach برای پیمایش ارایه
+
+..............
+
+جلسه 92
+setInterval
+clearInterval
+
+var i = 10;
+
+var timer = setInterval(function() {
+  if (i === 0) {
+    alert("game over");
+    clearInterval(timer);
+  }
+
+  console.log(i);
+  i--;
+}, 1000);
+
+جلسه 93
+
+var minute = +prompt("enter minute:", 0); //1
+
+var second = +prompt("enter second", 0); //12
+
+var TImer = setInterval(function() {
+  if (second === -1) {
+    minute--;
+    second = 59;
+  }
+  if (minute === 0 && second === 0) {
+    clearInterval(TImer);
+  }
+
+  console.log("timer:" + minute + ":" + second);
+  second--;
+}, 1000);
+
+جلسه94
+
+falsy value
+
+جلسه95
+setTimeout(function() {
+  alert("welcome");
+}, 2000);
+
+setTimeout(
+  function(n1, n2) {
+    alert(n1 + n2);
+  },
+  2000,
+  1,
+  2
+);
+
+جلسه96
+
+let photo= false;
+
+setTimeout(function(){
+    if(photo){  
+        alert("true")
+        //true
+    }
+},5000)
+
+
+
+setTimeout(function(){
+    if(!photo){
+        alert("false")
+        //false
+    }
+},5000)
+
+جلسه97
+
+// flag
+
+// let userName = prompt("enter username");
+
+// let users = ["pooya", "mehran", "ali", "arash", "hasan"];
+
+// var loginFlag = false;
+
+// for (let i = 0; i < users,length; i++) {
+//   if (users[i] === userName) {
+//     loginFlag = true;
+//   }
+// }
+
+// console.log("flag", loginFlag);
+
+// if (loginFlag) {
+//   alert("welcome");
+// } else {
+//   alert("username not found");
+// }
+
+
+جلسه98
+// hoisting
+
+n1 = 12;
+
+
+console.log(n1);
+
+var n1;
+let n2;  //نمیشه 
+
+جلسه99
+انواع تعریف متغیر
+
+var 
+let
+اپدیت میشه ولی دوباره تعریف نمیشه
+هویستینگ نمیشه
+داخل اسکوپ مقدار فقط مال اون اسکوپه 
+
+global scope //var
+block scope //let
+----------------------------------------------
+const
+ثابت هست  نمیشه اگدیت کرد مقدارشو
+مقدار اولیه همیشه لازمه
+----------------------------------------------
+جلسه100
+پایان سطح مقدماتی
