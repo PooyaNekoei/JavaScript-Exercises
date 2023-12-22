@@ -1,0 +1,208 @@
+e101
+//dom
+
+let titleText=document.getElementById("title");
+
+console.log(titleText);
+
+e102
+getElement
+image
+
+e103
+getAttribute
+setAttribute
+
+e104
+style
+
+h1title.style.color="red";
+h1title.style.fontSize= "10px"
+
+e105
+innerHTML
+innerTEXT
+textContent     
+
+let h1title = document.getElementById("title");
+console.log(h1title.innerHTML); *
+
+let listItem = document.querySelectorAll(".list");
+console.log(listItem[2].innerText); *
+console.log(listItem[1].textContent); *
+----------------------------------
+تغییر محتوا
+listItem[0].innerHTML="هرچی بخام";
+----------------------------------
+
+let select=document.getElementById("select")
+
+console.log(select.value); *
+
+e106
+createElement
+setAttribute
+
+let userName = prompt("username");
+
+let newLiElem = document.createElement("li");
+
+newLiElem.setAttribute("id","myid");
+
+newLiElem.style.color="red";
+
+newLiElem.innerHTML = userName;
+
+console.log(newLiElem);
+
+e107
+append
+appendChild
+
+let ulElem = document.querySelector("ul");
+
+let userName = prompt("username");
+
+let newLiElem = document.createElement("li");
+
+newLiElem.setAttribute("id","myid");
+
+newLiElem.style.color="red";
+
+newLiElem.innerHTML = userName;
+
+console.log(newLiElem);
+
+ulElem.append(newLiElem); *
+
+ulElem.appendChild(newLiElem); *
+
+e108
+event
+
+اینا رو فانکشن مینویسی بعد رو خود مثلا دکمه ک کلیک شد انجام میشه
+
+
+onclick="myclick()"
+
+//js
+
+let h1Elem=document.getElementById("title")
+
+function myclick(){
+    h1Elem.style.color="red"
+    h1Elem.style.fontSize="100px";
+}
+
+e109
+تمرین
+
+let titleElem = document.querySelector("h1");
+
+let btn = document.querySelector("button");
+
+let bulbFlag = false;
+
+function myclick() {
+  if (bulbFlag) {
+    btn.innerHTML = "turn on";
+    titleElem.innerHTML = "خاموش";
+    bulbFlag = false;
+  } else {
+    btn.innerHTML = "turn off";
+    titleElem.innerHTML = "روشن";
+    bulbFlag = true;
+  }
+}
+
+e110
+mini project login form
+
+e111
+event
+
+onkeypress
+onkeyup
+onkeydoown
+
+let inputElem=document.querySelector(".input")
+let inputValue=inputElem.value
+
+function keyLog(){
+  // console.log(inputValue);
+  console.log("typed");
+}
+
+e112
+mini project e110
+
+e113
+onfocus
+onblur
+
+برای ----استفاده میشه ک  کاربر وارد یا خارج میشه
+input
+
+e114
+تمرین
+e115
+event
+
+onclick
+ondblclick    //double click
+
+
+e116
+addeventlistener
+
+
+titleElem.addEventListener("click",clicked)   
+// () این رو جلوی اسم تابع نذاز
+
+function clicked(){
+  console.log("clicked");
+}
+
+
+titleElem.addEventListener("click", function() {
+  console.log("clicked");
+});
+
+
+e117
+classlist.add
+classlist.remove
+classlist.toggle //هردو عمل رو انجام میده
+
+
+
+
+
+titleElem.addEventListener("click", function() {
+  titleElem.classList.add("color")
+  titleElem.classList.remove("fs-h1")
+  titleElem.classList.toggle("fs-h1");
+  titleElem.classList.toggle("color");
+});
+
+e118
+تمرین
+
+e119
+
+let selectElem=document.querySelector("#selected");
+
+selectElem.addEventListener("change",function(){
+  console.log(selectElem.value);
+})
+
+e120
+تمرین
+
+
+
+
+
+
+
+

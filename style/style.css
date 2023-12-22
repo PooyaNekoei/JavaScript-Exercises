@@ -1,0 +1,14 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.color {
+  color: red;
+}
+.fs-h1 {
+  font-size: 50px;
+  font-weight: bold;
+}

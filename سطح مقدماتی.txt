@@ -1189,14 +1189,22 @@ var Age = ages.filter(function(age) {
 console.log(Age);
 
 جلسه76
-------------------------
-جلسه77
 
+let basket = [
+  { id: 1, name: "laptop", price: 5000000 },
+  { id: 2, name: "phone", price: 20000 },
+  { id: 3, name: "pen", price: 5000 },
+  { id: 4, name: "mobile", price: 40000 },
+  { id: 5, name: "he adphone", price: 100000 }
+];
 
-//////////////////////////////////////////////////////////////////////
-از اینجا به بعد مرتب کن
+let filterProduct = basket.filter(function(product) {
+  return product.price < 100000;
+});
 
-//////////////////////////////////////////////////
+let postCost = filterProduct.length * 1000; //هزینه ارسال
+
+console.log(postCost);
 
 جلسه 77
 
@@ -1223,15 +1231,133 @@ var num=10;
 // console.log(num.split());  ?
 
 // console.log(scores.reverse());
+جلسه 78
+
+let word = prompt("enter your word");
+
+let charArray = word.split(""); //تبدیل به ارایه شد
+
+charArray.reverse(); //برعکس شد
+
+let wordReverse = charArray.join("");
+
+console.log(word);
+console.log(wordReverse);
+
+if (word === wordReverse) {
+  alert("کلمه از هر دو سمت به یک شکل خوانده می شود");
+} else {
+  alert("کلمه از هر دو سمت به یک شکل خوانده نمی شود");
+}
 
 جلسه 79
 best practice
 
-بهینه کردن کد 
+let x=true;
+if(x){
+  console.log(true)
+}
+جلسه 80
+
+// todo list
+
+let toDoArray = [
+  { id: 1, title: "learn js", isDoing: "true" },
+  { id: 2, title: "learn tailwind", isDoing: "false" },
+  { id: 3, title: "learn bootstrap", isDoing: "false" }
+];
+
+let userMenu = prompt("choose one of them: \n 1:add \n 2:remove \n 3:do");
+
+switch (userMenu) {
+  case "1":
+  case "add":
+    let newToDoName = prompt("چی اضافه کنم اسمشو بگو");
+    if (newToDoName) {
+      if (isNaN(newToDoName)) {
+        let newToDoObject = {
+          id: toDoArray.length + 1,
+          title: newToDoName,
+          isDoing: false
+        };
+        toDoArray.push(newToDoObject);
+      } else {
+        alert("عدد وارد نکن");
+      }
+    } else {
+      alert("چیزی وارد نکردی");
+    }
+    break;
+  case "2":
+  case "remove":
+    let removeToDo = prompt("چی حذف کنم اسمشو بگو");
+    if (removeToDo) {
+      if (isNaN(removeToDo)) {
+        let toDoIndex = toDoArray.findIndex(function(todo) {
+          return todo.title === removeToDo;
+        });
+        if (toDoIndex === -1) {
+          alert("چنین اسمی داخل لیست نداریم");
+        } else {
+          toDoArray.splice(toDoIndex, 1);
+        }
+      } else {
+        alert("عدد وارد نکن");
+      }
+    } else {
+      alert("چیزی وارد نکردی");
+    }
+    break;
+  case "3":
+  case "do":
+    let editToDoName = prompt("کدوم کار انجام شده اسمشو بگو");
+    if (editToDoName) {
+      if (isNaN(editToDoName)) {
+        toDoArray.forEach(function(todo) {
+          if (todo.title === editToDoName) {
+            todo.isDoing = true;
+          } 
+          // اگه اشتباه وارد کرد چی میشه
+        });
+      } else {
+        alert("عدد وارد نکن");
+      }
+    } else {
+      alert("چیزی وارد نکردی");
+    }
+    break;
+  case "":
+    alert("چیزی وارد نکردی که");
+    break;
+  default:
+    alert("چنین عملیاتی نداریم");
+    break;
+}
+
+console.log(toDoArray);
+
+//  ما یه شرطی رو همجا چک میکنیم اینو چطوری تبدیل به تابع کنیم ک هربار صداش بزنمی که حجم کد بیاد پایین
+
+جلسه 81
+let taskArray = {
+  pooya: ["html", "css", " tailwind"],
+  mehran: ["html", "css", " bootstrap"],
+  ali: ["python","uiux"]
+};
+
+let newTaskName = prompt("new task name :");
+let employeeName = prompt("employee name:");
+
+var employeeTask = taskArray[employeeName];
+employeeTask.push(newTaskName);
+
+console.log(taskArray);
 
 جلسه 82
 
 data type reference  primitive
+جلسه 83
+
 
 جلسه 86 
 

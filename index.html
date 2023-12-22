@@ -4,13 +4,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JavaScript</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style/style.css" />
   </head>
   <body>
-    <h1>Welcome to</h1>
-    <p>JavaScript</p>
+    <h1 class="title fs-h1">text</h1>
+    <div>
+      <input
+        type="text"
+        onkeypress="keyLog()"
+        class="input"
+        placeholder="onkeypress"
+      />
+      <input
+        type="text"
+        onkeydown=" keyLog()"
+        class="input"
+        placeholder="onkeydown"
+      />
+      <input
+        type="text"
+        onkeyup="keyLog()"
+        class="input"
+        placeholder="onkeyup"
+      />
+    </div>
+    <br>
+    <button onclick="myClick()">click</button>
+    <br>
+    <div>
+      <select id="selected">
+        <option value="original">original</option>
+        <option value="twd">twd</option>
+        <option value="got">got</option>
+        <option value="cukur">cukur</option>
+      </select>
+    </div>
 
     <!-- link -->
     <script src="app.js"></script>
+    <!-- <script src="store.js"></script> -->
+    <!-- <script src="todo.js"></script> -->
   </body>
 </html>
